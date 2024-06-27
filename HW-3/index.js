@@ -11,13 +11,14 @@ if (number % 3 === 0 && number % 5 === 0) {
 }
     
 //2
-let year = 2024
-if (year % 4===0){
+let year = 1900
+if ((year % 4===0 && year % 100 !== 0) || year % 400 === 0){
    console.log(`${year} is a leap year!`)
 }
 else {
   console.log(`${year} is not a leap year!`)
 }
+
 
 //3
 let age = 3
