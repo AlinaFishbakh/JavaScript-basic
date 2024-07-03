@@ -1,10 +1,7 @@
 //task1//
 function reverseString(str) {
-  let splitString = str.split("")
-  let reversedArray = splitString.reverse()
-  let joinArray = reversedArray.join("")
-  return joinArray
-  }
+  return str.split("").reverse().join("")
+}
 
 console.log(reverseString("Hello world!"))
 
