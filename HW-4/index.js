@@ -1,18 +1,18 @@
 // Task 1
 
-const currentNumber = 12
+const currentNumber = 11
 let divider = 2
-let isNotPrime = false;
+let isPrime = true;
 
 do {
     if (currentNumber % divider === 0) {
-        isNotPrime = true
+        isPrime = false
         break;
     }
     divider++;
 } while (divider !== currentNumber)
 
-if (isNotPrime) {
+if (isPrime) {
     console.log(`Число ${currentNumber} не є простим числом`)
 } else {
     console.log(`Число ${currentNumber} є простим числом`)
